@@ -1,1 +1,1 @@
-# ai-skills
+# Automation code review skill
