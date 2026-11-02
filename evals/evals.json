@@ -1,0 +1,23 @@
+{
+  "skill_name": "automation-code-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's our Playwright test suite (zip attached). Can you take a look and tell me what needs fixing? It's been flaky for weeks.",
+      "expected_output": "Markdown report file; flakiness findings tied to specific file:line evidence; Critical/High severity assigned to false-confidence and gating issues; remediation plan sequenced",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Review this repo on GitLab and draw up a report on what we could improve: <repo url>",
+      "expected_output": "Repo mapped before reading; lenses selected to match actual stack; 10-25 findings; Coverage and confidence section honestly listing what wasn't read",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Quick sanity check on this .gitlab-ci.yml before I merge it - anything dumb in here?",
+      "expected_output": "Scoped report, not padded to 20 findings; catches gating/secrets/caching issues; states that fragment scope limits architectural findings",
+      "files": []
+    }
+  ]
+}
